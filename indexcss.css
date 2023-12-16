@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('images/frame3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Start-button{
+    font-family: "Inter-SemiBold",;
+    display: flex;
+    flex-direction: column;
+    width: 280.4px;
+    height: 75.68px;
+    align-items: center;
+    justify-content: center;
+    padding: 13.49px 0px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 14.87px;
+    overflow: hidden;
+}
+
+.frame-icon {
+    position: relative;
+    width: 134px;
+    height: 994px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .transforming-complexity-into {
+    margin: 0;
+    font-weight: 300;
+  }
+  .at-a-time,
+  .one-matrix {
+    font-weight: 300;
+  }
+  .at-a-time {
+    font-family: var(--font-inter);
+  }
+  .one-matrix-at-a-time {
+    margin: 0;
+  }
+  .transforming-complexity-into-container {
+    position: relative;
+    letter-spacing: -0.08em;
+    line-height: 128.89%;
+    color: #ffffff;
+    font-family: "Inter-Light", Helvetica;
+  }
+  .one-application {
+    color: #ffffff;
+  }
+  .solve-all-your-container {
+    position: relative;
+    font-family: "Inter-Light", Helvetica;
+    font-size: 31.02px;
+    letter-spacing: -0.07em;
+    line-height: 160.36%;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .transforming-complexity-into-s-parent {
+    width: 1199px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .frame1 {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .start-now {
+    position: relative;
+    font-size: 29.68px;
+    letter-spacing: -0.07em;
+    line-height: 160.36%;
+    font-weight: 600;
+    font-family: var(--font-inter);
+    color: #000;
+    text-align: center;
+  }
+  .frame,
+  .frame-parent,
+  .frame1 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .frame1 {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333; /* Add text color */
+    font-size: 18px; /* Add font size */
+    text-align: ce;
+  }
+
+  .frame,
+  .frame-parent {
+    justify-content: center;
+  }
+  .frame {
+    height: 393.7px;
+    flex-shrink: 0;
+    flex-direction: column;
+    gap: 48px;
+    position: undefined;
+    margin-bottom: 146px;
+  }
+
+  .frame-parent {
+    top: -100px;
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    flex-direction: row;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    font-size: 76.07px;
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+

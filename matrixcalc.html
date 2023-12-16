@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="matrixcss.css">
+</head>
+
+<body>
+    <div class="matrixcalc">
+        <h1>[Matrix Calculator]</h1>
+
+        <div class="input-containers">
+            <div class="matrix-input-container">
+                <label for="sizeA">Matrix A - Rows:
+                    <input type="number" id="rows1" min="1" max="5" class="matrix-input1" onchange="generateMatrices()" value="3">
+                    Columns:
+                    <input type="number" id="cols1" min="1" max="5" class="matrix-input1" onchange="generateMatrices()" value="3">
+                </label>
+            </div>
+
+            <div class="matrix-input-container" style="margin-left: 500px;">
+                <label for="sizeB">Matrix B - Rows:
+                    <input type="number" id="rows2" min="1" max="5" class="matrix-input2" onchange="generateMatrices()" value="3">
+                    Columns:
+                    <input type="number" id="cols2" min="1" max="5" class="matrix-input2" onchange="generateMatrices()" value="3">
+                </label>
+            </div>
+        </div>
+
+        <div class="matrices-container">
+            <div class="matrixAgr">
+                <div class="matrix-container" id="matrixA">
+                    <h2>Matrix A</h2>
+                    <!-- Matrix A input fields will be added here dynamically -->
+    
+                    
+                </div>
+    
+                <div class="operatorsA">
+                    <div>
+                        <input type="button" class ="oper-button" value="Determinant" onclick="determinantMatrixA()">
+                        <input type="button" class ="oper-button" value="Inverse" onclick="inverseMatrixA()">
+                    </div>
+                    <div>
+                        <input type="button" class ="oper-button" value="Transpose" onclick="transposeMatrixA()">
+                        <input type="button" class ="oper-button1" value="Multiply by" onclick="multiplyByMatrixA()">
+                        <input type="number" class="scalar" id="multiplyByInputA" class="numeric-input" value="2">
+                    </div>
+                    <div>
+                        <input type="button" class="oper-button" value="Rank" onclick="RankMatrixA()">
+                        <input type="button" class ="oper-button1" value="To the power of" onclick="powerOfMatrixA()">
+                        <input type="number" class="scalar" id="powerOfInputA" class="numeric-input" value="2">
+                    </div>
+                    <div>
+                        <input type="button" class="oper-button" value="Matrix Trace" onclick="traceMatrixA()">
+                    </div>
+                </div>
+            </div>
+            
+
+            
+
+            <div class="operators-buttons">
+                <div>
+                    <input type="button" class ="clear" value="Clear" onclick="clearMatrix()">
+                </div>
+                <div>
+                    <input type="button" value="AxB" onclick="multiplyMatrices()">
+                </div>
+                <div>
+                    <input type="button" value="A+B" onclick="addMatrices()">
+                </div>
+                <div>
+                    <input type="button" value="A-B" onclick="subtractMatrices()">
+                </div>
+            </div>
+
+            <div class="matrixBgr">
+                <div class="matrix-container" id="matrixB">
+                    <h2>Matrix B</h2>
+                    <!-- Matrix B input fields will be added here dynamically -->
+                </div>
+                    
+                <div class="operatorsB">
+                    <div>
+                        <input type="button" class ="oper-button" value="Determinant" onclick="determinantMatrixB()">
+                        <input type="button" class ="oper-button" value="Inverse" onclick="inverseMatrixB()">
+                    </div>
+                    <div>
+                        <input type="button" class ="oper-button" value="Transpose" onclick="transposeMatrixB()">
+                        <input type="button" class ="oper-button1" value="Multiply by" onclick="multiplyByMatrixB()">
+                        <input type="number" class="scalar" id="multiplyByInputB" class="numeric-input" value="2">
+                    </div>
+                    <div>
+                        <input type="button" class="oper-button" value="Rank" onclick="RankMatrixB()">
+                        <input type="button" class ="oper-button1" value="To the power of" onclick="powerOfMatrixB()">
+                        <input type="number" class="scalar" id="powerOfInputB" class="numeric-input" value="2">
+                    </div>
+                    <div>
+                        <input type="button" class="oper-button" value="Matrix Trace" onclick="traceMatrixB()">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="result" class="result">
+            <h2>Result</h2>
+            <!-- Result matrix will be displayed here dynamically -->
+        </div>
+    </div>
+
+    <script src="matrixscript.js"></script>
+</body>
+
+</html>
